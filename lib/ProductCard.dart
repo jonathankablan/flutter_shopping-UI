@@ -25,7 +25,7 @@ class ProductCard extends StatelessWidget {
           SizedBox(
             height: 8.0,
           ),
-          Image.asset(imgUrl, width: 281.0, height: 191.0),
+          Image.network(imgUrl, width: 281.0, height: 191.0),
           Text(title, style: TextStyle(fontSize: 25.0, fontFamily: "Raleway")),
           SizedBox(
             height: 15.0,
@@ -43,7 +43,7 @@ class ProductCard extends StatelessWidget {
                   children: <Widget>[
                     Text(previousPrice,
                         style: TextStyle(
-                            color: Color(0xFFfeb0ba),
+                            color: Colors.blueAccent,
                             fontSize: 16.0,
                             fontFamily: "Helvetica")),
                     SizedBox(
@@ -51,16 +51,16 @@ class ProductCard extends StatelessWidget {
                     ),
                     Text(price,
                         style:
-                            TextStyle(fontSize: 28.0, fontFamily: "Helvetica")),
+                            TextStyle(fontSize: 18.0, fontFamily: "Helvetica")),
                   ],
                 ),
                 IconButton(
                   icon: Icon(CustomIcons.cart),
                   onPressed: () {},
-                )
+                ),
               ],
             ),
-          )
+          ),
         ],
       ),
     );

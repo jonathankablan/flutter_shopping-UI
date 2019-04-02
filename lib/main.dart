@@ -16,8 +16,8 @@ class _MyAppState extends State<MyApp> {
   int _currentIndex = 0;
 
   List<Widget> bottomNavIconList = [
-    Image.asset(
-      "assets/store.png",
+    Image.network(
+      "https://www.upwarddata.fr/wp-content/uploads/sites/3/2018/02/magineo-partenaire-kernix-500x250.png",
       width: 35.0,
       height: 35.0,
     ),
@@ -47,16 +47,20 @@ class _MyAppState extends State<MyApp> {
                 child: Padding(
                   padding: EdgeInsets.only(top: 30.0, bottom: 25.0),
                   child:
-                      Image.asset("assets/logo.png", width: 62.0, height: 43.0),
+                      Image.network(
+                        "https://www.silex-france.com/silex-rest/organization/public/1684/logo", 
+                        width: 80.0, 
+                        height: 80.0
+                      ),
                 ),
               ),
-              ProductCard(0xFFfaecfb, "assets/shoes_01.png",
-                  "Hybrid Rocket WNS", "\$999.00", "\$749"),
+              ProductCard(0xFFBBDEFB, "https://www.eewee.fr/wp-content/uploads/2013/12/eewee-logo-framework-symfony-2.png",
+                  "Application Symfony", "59.509,00\€", "42.349,00\€"),
               SizedBox(
                 height: 32.0,
               ),
-              ProductCard(0xFFf8e1da, "assets/shoes_02.png",
-                  "Hybrid Runner ARS", "\$699", "\$599")
+              ProductCard(0xFFFFCC80, "https://gurubox.files.wordpress.com/2016/12/apple-and-android.png?w=705&h=435&crop=1",
+                  "Application Mobile", "60.990,00\€", "50.199,00\€")
             ],
           ),
         ),
